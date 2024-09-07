@@ -1,0 +1,171 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #ff4444;
+  --accent-color: #fff;
+  --text-color: #fff;
+  --background-color: #0c1844;
+  --section-spacing: 128px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "sans-serif";
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h2 {
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+section {
+  margin: var(--section-spacing) 0;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+#about {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5x rgba(0, 0, 0, 0.1);
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.stack-item {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+#projects .card p {
+  text-align: center;
+}
+
+#projects .card h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 0 16px 0;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  gap: 1rem;
+  margin-top: 16px;
+}
+
+.cta {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: var(--background-color) 0.3s ease;
+  font-weight: 300;
+  margin: 4px;
+}
+
+.cta:hover {
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact-text {
+  margin-bottom: 16px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
